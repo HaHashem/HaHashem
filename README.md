@@ -27,11 +27,21 @@ I investigate alerts, hunt indicators across SIEM and EDR, and write up what I f
 
 | | What it is |
 |---|---|
-| **[IOC Checker](https://github.com/HaHashem/ioc-checker)** | Browser tool that extracts and sanitizes IPs, domains, hashes, URLs and **JA3/JA4** fingerprints, then searches many threat intel platforms at once. No API keys, runs entirely in the browser. [Live version](https://hahashem.github.io/ioc-checker/) |
-| **[SOC Hunting Queries](https://github.com/HaHashem/soc-hunting-queries)** | Query templates with context for **CrowdStrike Falcon**, **Splunk** and **Sentinel KQL**: ClickFix, Office child processes, scheduled tasks, JA4 clustering |
 | **[Hunting distributed attacks with JA4](https://hahashem.github.io/article.html?slug=ja4-fingerprint-hunting)** | How to cluster an attack that rotates IPs and User-Agents using TLS fingerprints, and where that approach breaks down |
 | **[ClickFix investigation](https://hahashem.github.io/article.html?slug=dfir-clickfix-investigation)** | Lab case study of the fake-CAPTCHA, Win+R paste attack with host artifacts and Falcon Advanced Event Search queries |
 | **[Phishing to lateral movement](https://hahashem.github.io/article.html?slug=dfir-phishing-to-lateral-movement)** | DFIR case study: macro, PowerShell, persistence, LSASS access and SMB movement with ATT&CK mapping |
+
+**Open-source detection and DFIR work**
+
+| Repo | What it is |
+|---|---|
+| [sigma-rules](https://github.com/HaHashem/sigma-rules) | 20 Sigma rules for Windows hunting with an ATT&CK coverage map, checked in CI against Splunk and KQL |
+| [soc-hunting-queries](https://github.com/HaHashem/soc-hunting-queries) | 25+ hunting query sets for CrowdStrike, Splunk, Sentinel and network logs, plus a ransomware section |
+| [dfir-toolkit](https://github.com/HaHashem/dfir-toolkit) | Offline command-line tools: IOC extraction, hashing, JA3/JA4 stacking, EVTX triage |
+| [dfir-cheatsheets](https://github.com/HaHashem/dfir-cheatsheets) | Windows artifacts, event IDs, persistence, triage checklist, PowerShell/Linux/CrowdStrike RTR commands |
+| [ioc-checker](https://github.com/HaHashem/ioc-checker) | In-browser indicator extraction and multi-platform lookups, no API keys |
+
+Write-ups and the full portfolio: [hahashem.github.io](https://hahashem.github.io)
 
 *Case studies are lab scenarios with invented data. No employer information is published.*
 
